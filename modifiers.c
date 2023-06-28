@@ -9,13 +9,13 @@ unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 
 /**
  * print_width - Stores leading spaces to a buffer for a width modifier.
- * @output: buffer_t struct containing a character array.
- * @printed: current number of characters already printed to output
- *           for given number specifier.
+ * @output: A buffer_t struct containing a character array.
+ * @printed: The current number of characters already printed to output
+ *           for a given number specifier.
  * @flags: Flag modifiers.
- * @wid: width modifier.
+ * @wid: A width modifier.
  *
- * Return: number of bytes stored to the buffer.
+ * Return: The number of bytes stored to the buffer.
  */
 unsigned int print_width(buffer_t *output, unsigned int printed,
 		unsigned char flags, int wid)
@@ -34,13 +34,13 @@ unsigned int print_width(buffer_t *output, unsigned int printed,
 
 /**
  * print_string_width - Stores leading spaces to a buffer for a width modifier.
- * @output: buffer_t struct containing a character array.
+ * @output: A buffer_t struct containing a character array.
  * @flags: Flag modifiers.
- * @wid: width modifier.
- * @prec: precision modifier.
- * @size: size of string.
+ * @wid: A width modifier.
+ * @prec: A precision modifier.
+ * @size: The size of the string.
  *
- * Return: number of bytes stored to the buffer.
+ * Return: The number of bytes stored to the buffer.
  */
 unsigned int print_string_width(buffer_t *output,
 		unsigned char flags, int wid, int prec, int size)
@@ -60,13 +60,13 @@ unsigned int print_string_width(buffer_t *output,
 
 /**
  * print_neg_width - Stores trailing spaces to a buffer for a '-' flag.
- * @output: buffer_t struct containing a character array.
- * @printed: current number of bytes already stored to output
+ * @output: A buffer_t struct containing a character array.
+ * @printed: The current number of bytes already stored to output
  *           for a given specifier.
  * @flags: Flag modifiers.
- * @wid:width modifier.
+ * @wid: A width modifier.
  *
- * Return:number of bytes stored to the buffer.
+ * Return: The number of bytes stored to the buffer.
  */
 unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 		unsigned char flags, int wid)
@@ -82,4 +82,3 @@ unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 
 	return (ret);
 }
-
